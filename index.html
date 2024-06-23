@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Bear</title>
+    <style>
+        main {
+            display: grid;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 30px;
+            width: 1024px;
+        }
+
+        .care {
+            height: 190px;
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+
+        .bear {
+            height: 200px;
+            width: auto;
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            background-image: url(https://s3-alpha-sig.figma.com/img/bbff/0233/97c5918601bab330ecb23023ecbb6213?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l2B6FwADT0U779A0vII-JYJP0y88~wMiB3z3gLpxRmLnRR7FMGWpdSzAYseXVgLkVdwK6qF4TETZRMJNcSZwVEm7yf6xYZDFRclMH96dm0AfNYlm0hkHFFgGtwl27YxGGJg2ho1SypRzZzOsWevbHhbBoW5WlAp5nVx6x5mEHnugFqoL3ql~gF7fC4IMghw3hLotyJ~tcz7q7XMvu32SpKiw5CPzPNTpA0M4FIfdkCMr8wrOTk8i11s~E8jouALRIh1m31corOLzjORL2F3eRF~IFVFSsLpz-y5mVhe7ce3uIdAs36mAyYO1sj-GeCcBEhIizD5ReLBTYS-MxlLrgA__);
+        }
+
+        .short {
+            height: 200px;
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image: url(https://s3-alpha-sig.figma.com/img/2303/4857/d565c6cb97dcbc71b71596fdb024c064?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QLZ0RT2ZYCHFkWjUko8qIvNU1iUyduZOvu06-Yn0XD6L3wE8-r-uO0opgpvu3D9Xkb2pao~aPLmsFZd-UfDVcf4dYo1s6SGrG07Cf44wC~oAkNc1o9fgJLcucSVCwa6qiD2yIlFexNEnLd9LBjOcxrMX5uXLwpXZoCAUgm4U1DA6LzAXcVpDt5run0Z9ndIsIKMFM86eTN57IoXwMoenG15rXHS7kFZq5ZsmCj0OgogDIWQzPdRxWtp7b7TsveJu5yuuvnOhIgWDnsBBerAROcsgBbFqdDL~94vRgJ0GV1st1GKsr6m1Qm2zw0OJBlnaBqJX49ernVjYRKC3KeOp3Q__);
+        }
+
+        .short1 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image: url(https://s3-alpha-sig.figma.com/img/45e3/0141/5913b81f120a8c3d05a28a450f8c4d9c?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GgB7pAe-PiXBngPj-DFOPN~j07dRoyt9Vdi3-ONA1r6IZ9A0kQxO09nbdUnya1C~SGN8O85Rpm-qylAewXXT~c7N68WfcqJ~GUwJtbyX4~z8AzM84l42B2gN2rq8zuqKQWplkAOmYLV4mHvJoBwOkpirF2Uihr4ng7xrrlX00qM3HCFNi6oapbcYNSlIIf-0GbqCR2gLMNjrwXls1~JC-sCMtMqvJltG5T9kzMg0vw4cQm1JE0yUlM2FoT~ry-4OUtoV4lrFjOYP~oAegn148Mw2lPoSb53VXOIyUlMNm5X4q7Wjsr6FY8Bs2GdfdxaVmkSIIvgQQJV95EXP~ESDYg__);
+        }
+
+        .big {
+            height: auto;
+            width: auto;
+            grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-image: url(https://s3-alpha-sig.figma.com/img/bca2/f620/de6e898a69810b2b6db91112fc18ba38?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T8b-IogD-31mKpT9T7gnYjADc5-Y9b6m3NICIWIXIHizYu8hA6ugwEWSIXma6uKkSFUpX20UXlHKAKG1VYOfVXxGgegdZn08vjxdMeh0CC4Sb4mUYqgAyQw2-jS2bHk83pwj2vSAHdRqDRAdbKFdqTrVUiQ041lkZObIn~XRarFTVOobxack1JWWXIPujCcGN1E16Wd4tlBprCt2wCRPEIxE~mch~IU~VRnaeMKQAuIl9gYfVH2gzOFYwyI4tAU1xDlZOCAU1ivhgwLiKB5g9BiaRpwpjUtIqa1cXDKBPKT9BVvFoJiBk04cIsxNfctyrU7Fbc64zOD8GWE6OYsy3g__);
+        }
+
+        .short3 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image: url(https://s3-alpha-sig.figma.com/img/6bcd/efb0/0337a40c42297ebc1ab255490f5e8545?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZRDbzb4E37RiJZwHxya0DCNJEu~7bILy88CN4HsjO5rc4Esq2qIksIIB-~~fKU9BDcjURcWXjntJgxGB0jfQyn25kguQX7tVcUNW9dXRMhE08vzCQR9RSI9bZwoW1Ir4nhSR-Q2FzcfPuJM1M2~E9PKuoUOYv2hiWfD1N9Dh8yJ3KY2DfWZfy5gJdRq~37plUXOv2OmeHdjKImbYItbCesxJK3mcPIKMB0aoT1QiFpWM3AQzd1vd~6xDbEAS-sUsZTIBwd7hputW~9hsOeukVB94fUxcmGw~maWsmVIX3rg~XKkvBvmL3iNHptVIzivZ8hu6Y9c9TGNH1JcWVfLM1Q__);
+        }
+
+        .short4 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image: url(https://s3-alpha-sig.figma.com/img/20e6/ab02/7c4af805ca31c98e027732247b3819b4?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y-NsK6c52ChjXzaiQKf8ieEV~8LZLpK8OEYokGeIUKuSxWhf13xNpkZ~9TiMsWyP99BbvQQpm5U-OJjervF7IDlQ-RC7Wj9dAdPnADk~52-Zs9AJfG-ev9YBzscpTPNZSwUfB4pca1CUvVoBQs53TBnp7MSWreKPUId548LajEkHAmnjmGru9rhSK3-GLM~lK5PirAYhNLeByqy3S-FgBvGVMnHRz63nN4v006IidQas2FdzAtm1IF6yvlLzMC2w3zP9u7dCGkBRDqzpDdKNepE6t0ynuCZhhKNsxTCLburdKrBVAWvZDWNbnzvqf-K9bt3a-uWI2y4yGnSIqaDZRQ__);
+        }
+
+        .short5 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image: url(https://s3-alpha-sig.figma.com/img/72e1/7db8/91eec4d4df40e1bc9e4c4f656ed01d02?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOdZIUnjtGZ~dAro2ZBLaPI8z~VV6L93b~G5bHFPMwPEjxA4sM~kPgbk5n-eCdiLYzBrSQcdGG1eMXKWut9qBOUpOt7qHo5evmby1O3RZHThPMPzxnXA2tJ090PjluTAmWUrnBGiG7aQzF9ccZP7zsH0gKgL0zltU~MsVp1BNjHfSa0KZfpODOAS9jesHgAYWvg6qp1pkwA7UuYqk75v6~e4SsrAbVTwfr4-HHD0LU5sAx2UtapUZkYiC8l-VT2gMseWAz91F-lrBoyyHfKrQaolBjvWHi6LvJsS9SO6ADGph6du8p1DYYhxk8TaLqSX4oLfn8MMobEAs5YmhEgirA__);
+        }
+
+        .short6 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-image: url(https://s3-alpha-sig.figma.com/img/8bbd/f686/a8085031fc2eec63ef8de2324c046e2b?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZIOgh-HiE~ZZRxop5ueaP2V3-298~JcKEnOGoieF-hN6nM6pEe1ycL~Vx90byzbLmzlwOeq-ShYjcJ9jcAbDOfd3Zs8aNeQ~KhXYtUi4VLDr6eonb0DW5~sNKbMfwgt4SqJecp9I~dZBU5KM~HzqilF~1JSn57yf2SyIFlp1ZdUsrI7vpOnJKOP553yfi-nVkuyKlBFs09~E6uOjgp0qv0jGYMS53doJFOgzJvZCvsIK~XHejizgr4uSbTS4346IAjAA3VnS6HcZF3wh7l8VNQYtOonXKdE305etBxtaV1TIu-vwpKtqAHKUegWVIIg7mc1DG1FcOfK9DHhXyWPySQ__);
+        }
+
+        .short7 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-image: url(https://s3-alpha-sig.figma.com/img/d1cf/c713/74327b177516ce0269fbe7e6432ff23c?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DIiycl~zIg-NyvgxaOh9aVsRc63gQAxW-z0NqScvmoQM5jbzP5RDw8Pob97GVCEFm5JSBREg5Doe0qmt1P-RLoTX05Ye5BWkC0FNIb4wN6f9gCBzfHttngw-Ig2DWFxIfa6oXQZZd19b~EF0d~IUP5lKylW9BoxjJlOB9SxD50hN5jOZfXgMuygcyXR8uTzfZoTKtMgS3DXQnzE7O8v3d70ItWSkqkU07h1oYSf38yoWBh8GKtIPRVPmSAOQYCHOm33QkcpemElVkJX6tu5rT2GzIav28B~kI4TOlZ3ZcPGlON3E0ULWUoK0x-QEGLjleMELseN0m6C~PSQ9w30G1w__);
+        }
+
+        .short8 {
+            height: 200px;
+            width: auto;
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-image: url(https://s3-alpha-sig.figma.com/img/e82e/484d/74f4dc30ae64616c5c76fc0145f3d120?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hClIFq5FSLiAdsiiuOzRUftx8mSWEdvCbj0AbmNmwlzlwqZV~lFSWxj52T~8JYdCDoo0ofTNG-4VO5BVFF0Eyk5S6XXW8pUIFBCibdozE7GFw7bbgCPxB~hrogNhHrriL-4VvBx13Sbv8Gz5TeeeRFd6e~YfaSN7UeRfgL7RK1bqdalFYcHejlIOEm1NrmtCtkEklxsQph~xFGLCkWlBRQyB4ddjbpCerHp0SZ2IO8J6A6RleW650epHQ9jIPRzP5YgSwZU~Amj5DUvLlbmokbq03q9wdtv04PL762bx9OhFzcLkdE8eU24a5rUkRmWLlu2-aWpTEMM9WR5WRZjwFA__);
+        }
+
+        div {
+            height: 100px;
+            width: 200px;
+        }
+
+        .emoji {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="emoji care">Care Bear</div>
+        <div class="emoji bear"></div>
+        <div class="emoji short"></div>
+        <div class="emoji short1"></div>
+        <div class="emoji big"></div>
+        <div class="emoji short3"></div>
+        <div class="emoji short4"></div>
+        <div class="emoji short5"></div>
+        <div class="emoji short6"></div>
+        <div class="emoji short7"></div>
+        <div class="emoji short8"></div>
+    </main>
+</body>
+
+</body>
+
+</html>
